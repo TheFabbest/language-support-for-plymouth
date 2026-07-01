@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Plymouth",
+	"scopeName": "source.plymouth",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#builtins"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.plymouth",
+					"match": "#.*$"
+				},
+				{
+					"name": "comment.line.double-slash.plymouth",
+					"match": "//.*$"
+				},
+				{
+					"name": "comment.block.plymouth",
+					"begin": "/\\*",
+					"end": "\\*/"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.plymouth",
+					"match": "==|!=|<=|>=|=|<|>|\\+|\\-|\\*|\\/|%|&&|\\|\\||!"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.plymouth",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.plymouth",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.float.plymouth",
+					"match": "\\b\\d+\\.\\d+\\b"
+				},
+				{
+					"name": "constant.numeric.integer.plymouth",
+					"match": "\\b\\d+\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.plymouth",
+					"match": "\\b(if|else|while|for|return|fun|break|continue|global|local)\\b"
+				},
+				{
+					"name": "constant.language.plymouth",
+					"match": "\\b(null|true|false)\\b"
+				}
+			]
+		},
+		"builtins": {
+			"patterns": [
+				{
+					"name": "support.class.plymouth",
+					"match": "\\b(Window|Math|Plymouth|Image|Sprite|Dialog|Text|Theme)\\b"
+				},
+				{
+					"name": "support.function.builtin.plymouth",
+					"match": "\\b(Text|GetWidth|GetHeight|Rotate|Scale|SetImage|GetImage|SetX|GetX|SetY|GetY|SetZ|GetZ|SetPosition|SetOpacity|GetOpacity|SetBackgroundTopColor|SetBackgroundBottomColor|SetRefreshFunction|SetBootProgressFunction|SetRootMountedFunction|SetSystemUpdateFunction|SetQuitFunction|SetDisplayNormalFunction|SetDisplayPasswordFunction|SetDisplayQuestionFunction|SetDisplayMessageFunction|SetHideMessageFunction)\\b"
+				}
+			]
+		}
+	}
+}

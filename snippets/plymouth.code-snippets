@@ -1,0 +1,67 @@
+{
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "If statement"
+  },
+  "Else Statement": {
+    "prefix": "else",
+    "body": [
+      "else",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "Else statement"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+      "while (${1:condition})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "While loop"
+  },
+  "Function Definition": {
+    "prefix": "fun",
+    "body": [
+      "fun ${1:function_name}(${2:arguments})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description": "Define a Plymouth function"
+  },
+  "Window GetWidth": {
+    "prefix": "Window.GetWidth",
+    "body": "Window.GetWidth()",
+    "description": "Get the width of the window"
+  },
+  "Window GetHeight": {
+    "prefix": "Window.GetHeight",
+    "body": "Window.GetHeight()",
+    "description": "Get the height of the window"
+  },
+  "Create Image": {
+    "prefix": "Image",
+    "body": "Image(\"${1:filename}.png\")",
+    "description": "Load a new image"
+  },
+  "Create Sprite": {
+    "prefix": "Sprite",
+    "body": "Sprite(${1:image})",
+    "description": "Create a new sprite from an image"
+  },
+  "Set Position": {
+    "prefix": "SetPosition",
+    "body": "${1:sprite}.SetPosition(${2:x}, ${3:y}, ${4:z});",
+    "description": "Set position of a sprite"
+  }
+}

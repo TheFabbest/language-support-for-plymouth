@@ -1,0 +1,59 @@
+{
+  "name": "language-support-for-plymouth",
+  "displayName": "Plymouth Language Support",
+  "description": "Syntax highlighting, comments, bracket matching, and folding support for Plymouth scripts.",
+  "version": "0.1.0",
+  "publisher": "TheFabbest",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "plymouth",
+    "boot",
+    "scripting",
+    "syntax-highlighting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheFabbest/language-support-for-plymouth"
+  },
+  "bugs": {
+    "url": "https://github.com/TheFabbest/language-support-for-plymouth/issues"
+  },
+  "homepage": "https://github.com/TheFabbest/language-support-for-plymouth#readme",
+  "scripts": {
+    "package": "npx @vscode/vsce package"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "plymouth",
+        "type": "programmingLanguage",
+        "aliases": [
+          "Plymouth",
+          "plymouth"
+        ],
+        "extensions": [
+          ".plymouth",
+          ".script"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "plymouth",
+        "scopeName": "source.plymouth",
+        "path": "./syntaxes/plymouth.tmLanguage.json"
+      }
+    ],
+    "snippets": [{
+      "language": "plymouth",
+      "path": "./snippets/plymouth.code-snippets"
+    }]
+  }
+}

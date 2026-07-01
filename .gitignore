@@ -1,0 +1,14 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# VS Code local states / history (but keeps launch.json)
+.vscode/*
+!.vscode/launch.json
+
+# Extension packaging outputs
+*.vsix
+
+# Node/log dependencies (in case vsce creates any local logs)
+node_modules/
+npm-debug.log*
