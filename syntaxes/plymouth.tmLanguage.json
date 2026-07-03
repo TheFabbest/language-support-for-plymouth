@@ -91,7 +91,7 @@
 				},
 				{
 					"name": "support.function.builtin.plymouth",
-					"match": "\\b(Text|GetWidth|GetHeight|Rotate|Scale|SetImage|GetImage|SetX|GetX|SetY|GetY|SetZ|GetZ|SetPosition|SetOpacity|GetOpacity|SetBackgroundTopColor|SetBackgroundBottomColor|SetRefreshFunction|SetBootProgressFunction|SetRootMountedFunction|SetSystemUpdateFunction|SetQuitFunction|SetDisplayNormalFunction|SetDisplayPasswordFunction|SetDisplayQuestionFunction|SetDisplayMessageFunction|SetHideMessageFunction)\\b"
+					"match": "\\b(Text|GetWidth|GetHeight|Rotate|Scale|SetImage|GetImage|SetX|GetX|SetY|GetY|SetZ|GetZ|SetPosition|SetOpacity|GetOpacity|SetBackgroundTopColor|SetBackgroundBottomColor|SetRefreshFunction|SetBootProgressFunction|SetSystemUpdateFunction|SetRootMountedFunction|SetKeyboardInputFunction|SetUpdateStatusFunction|SetDisplayNormalFunction|SetDisplayPasswordFunction|SetDisplayQuestionFunction|SetDisplayPromptFunction|SetValidateInputFunction|SetDisplayMessageFunction|SetHideMessageFunction|SetQuitFunction|GetMode)\\b"
 				}
 			]
 		}
