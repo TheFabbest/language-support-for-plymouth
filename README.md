@@ -37,3 +37,7 @@ This project is open for contributions and beginners are welcome. If you would l
 ### 0.1.0
 
 Initial public-ready release with improved metadata, packaging support, and documentation.
+
+### 0.2.0
+
+Added syntax highlighting for Plymouth built-in functions, including `Math`, `Image`, `Window`, and `Plymouth` functions.

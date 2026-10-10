@@ -2,7 +2,7 @@
   "name": "language-support-for-plymouth",
   "displayName": "Plymouth Language Support",
   "description": "Syntax highlighting, comments, bracket matching, and folding support for Plymouth scripts.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "TheFabbest",
   "license": "MIT",
   "engines": {
