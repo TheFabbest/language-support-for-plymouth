@@ -91,7 +91,23 @@
 				},
 				{
 					"name": "support.function.builtin.plymouth",
-					"match": "\\b(Text|GetWidth|GetHeight|Rotate|Scale|SetImage|GetImage|SetX|GetX|SetY|GetY|SetZ|GetZ|SetPosition|SetOpacity|GetOpacity|SetBackgroundTopColor|SetBackgroundBottomColor|SetRefreshFunction|SetBootProgressFunction|SetSystemUpdateFunction|SetRootMountedFunction|SetKeyboardInputFunction|SetUpdateStatusFunction|SetDisplayNormalFunction|SetDisplayPasswordFunction|SetDisplayQuestionFunction|SetDisplayPromptFunction|SetValidateInputFunction|SetDisplayMessageFunction|SetHideMessageFunction|SetQuitFunction|GetMode)\\b"
+					"match": "(?<=\\bMath\\.)(Abs|Min|Max|Clamp|Pi|Cos|Sin|Tan|ATan2|Sqrt|Int|Random)\\b"
+				},
+				{
+					"name": "support.function.builtin.plymouth",
+					"match": "(?<=\\bImage\\.)Text\\b"
+				},
+				{
+					"name": "support.function.builtin.plymouth",
+					"match": "(?<=\\bWindow\\.)(GetWidth|GetHeight|SetBackgroundTopColor|SetBackgroundBottomColor)\\b"
+				},
+				{
+					"name": "support.function.builtin.plymouth",
+					"match": "(?<=\\bPlymouth\\.)(SetRefreshFunction|SetBootProgressFunction|SetSystemUpdateFunction|SetRootMountedFunction|SetKeyboardInputFunction|SetUpdateStatusFunction|SetDisplayNormalFunction|SetDisplayPasswordFunction|SetDisplayQuestionFunction|SetDisplayPromptFunction|SetValidateInputFunction|SetDisplayMessageFunction|SetHideMessageFunction|SetQuitFunction|SetMessageFunction|GetMode)\\b"
+				},
+				{
+					"name": "support.function.builtin.plymouth",
+					"match": "(?<=\\.)(GetWidth|GetHeight|Rotate|Scale|SetImage|GetImage|SetX|GetX|SetY|GetY|SetZ|GetZ|SetPosition|SetOpacity|GetOpacity)\\b"
 				}
 			]
 		}
