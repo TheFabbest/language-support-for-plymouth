@@ -41,3 +41,4 @@ Initial public-ready release with improved metadata, packaging support, and docu
 ### 0.2.0
 
 Added syntax highlighting for Plymouth built-in functions, including `Math`, `Image`, `Window`, and `Plymouth` functions.
+Removed incorrect highlighting for `false` and `true` keywords, as they are not part of the Plymouth language.
