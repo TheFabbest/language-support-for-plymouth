@@ -79,7 +79,7 @@
 				},
 				{
 					"name": "constant.language.plymouth",
-					"match": "\\b(null)\\b"
+					"match": "\\b(NULL)\\b"
 				}
 			]
 		},
