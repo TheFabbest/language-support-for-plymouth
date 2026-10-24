@@ -3,6 +3,10 @@
 All notable changes to the Plymouth Language Support extension will be documented in this file.
 The date format is YYYY-MM-DD.
 
+## [0.2.1] - 2026-10-24
+
+- The `NULL` keyword is now highlighted instead of the non-existent `null` keyword.
+
 ## [0.2.0] - 2026-10-10
 
 - Added syntax highlighting for Plymouth built-in functions in their namespaces.
