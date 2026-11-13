@@ -32,6 +32,9 @@ Alternatively, you can run the extension in a development environment by pressin
 ## Contributing
 This project is open for contributions and beginners are welcome. If you would like to contribute, please fork the repository and submit a pull request with your changes. If you find any issues or have suggestions for improvements, please open an issue in the repository.
 
+## Related Projects
+See [this guide](https://github.com/TheFabbest/plymouth-tutorial) to get started with ready-to-use themes and for references.
+
 ## Release Notes
 
 ### 0.1.0
